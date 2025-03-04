@@ -1,12 +1,27 @@
+@font-face {
+	font-family: 'MainFont'; 
+	src: url(../fonts/main_font_v2.ttf) format('truetype'); 
+}
+
 body {
     background: no-repeat center/100% url("../images/back.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: min(7em, 2%);
+    padding-right: min(7em, 2%);
+    text-align: center;
+    min-width: 80%;
 }
-.header {
-    background-color: rgba(250, 235, 215, 0.5);
-    
+
+.header-block {
+    background-color: rgba(250, 235, 215, 0.6);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    min-width: 350px;
 }
+.angel {
+    width: 20%;
+}
+
+<
