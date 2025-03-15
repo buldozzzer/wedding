@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ваня и Даша</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   </head>
   <body>
-    <header>
-      <div class="header-block">
-        <object type="image/svg+xml" data="images/angel_without_bg.svg" id="logo" class="angel"></object>
-        <p>Дорогой друг, мы, Ваня и Даша, приглашаем тебя на очень важное для нас событие</p>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide slide" id="header">
+            <object type="image/svg+xml" data="images/angel_without_bg.svg" id="logo" class="angel"></object>
+            <p>Дорогой друг, мы, Ваня и Даша, приглашаем тебя на очень важное для нас событие</p>
+          </div>
+          <div class="swiper-slide slide">
+            <p>О нас</p>
+          </div>
+          <div class="swiper-slide slide"></div>
+          <div class="swiper-slide slide"></div>
+          <div class="swiper-slide slide"></div>
+        </div>
       </div>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-
-    </footer>
+    </div>
+    <script src="./js/swiper.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        autoHeight: true,
+        direction: 'vertical',
+        loop: false,
+        spaceBetween: 30,
+        slidesPerView: 1
+      });
+    </script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'MainFont'; 
-	src: url(../fonts/main_font_v2.ttf) format('truetype'); 
+	src: url(../fonts/main_font.ttf) format('truetype'); 
 }
 
 body {
@@ -14,14 +14,22 @@ body {
     min-width: 80%;
 }
 
-.header-block {
-    background-color: rgba(250, 235, 215, 0.6);
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    min-width: 350px;
-}
-.angel {
-    width: 20%;
+.swiper-container {
+    height: 98vh;
 }
 
-<
+.swiper-slide {
+    background-color: rgba(250, 235, 215, 0.6);
+    min-width: 350px;
+    height: 100%;
+
+    border-radius: 2em;
+    
+}
+.angel {
+    width: 25%;
+}
+
+p {
+    font-family: 'MainFont';
+}
