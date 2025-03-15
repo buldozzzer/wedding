@@ -11,19 +11,34 @@
   <body>
     <div class="swiper-container">
       <div class="swiper-wrapper">
-          <div class="swiper-slide slide" id="header">
+          <div class="swiper-slide slide">
             <object type="image/svg+xml" data="images/angel_without_bg.svg" id="logo" class="angel"></object>
-            <p>Дорогой друг, мы, Ваня и Даша, приглашаем тебя на очень важное для нас событие</p>
+            <div class="greating">
+              <p>Дорогой друг, мы, Ваня и Даша, приглашаем тебя на очень важное для нас событие</p>
+            </div>
           </div>
           <div class="swiper-slide slide">
             <p>О нас</p>
           </div>
           <div class="swiper-slide slide"></div>
           <div class="swiper-slide slide"></div>
-          <div class="swiper-slide slide"></div>
+          <div class="swiper-slide slide">
+            <div class="timer-wrapper">
+              <div class="timer">
+                <div class="timer-item timer-days">00</div>
+                <div class="separator">:</div>
+                <div class="timer-item timer-hours">00</div>
+                <div class="separator">:</div>
+                <div class="timer-item timer-minutes">00</div>
+                <div class="separator">:</div>
+                <div class="timer-item timer-seconds">00</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="./js/timer.js"></script>
     <script src="./js/swiper.js"></script>
     <script>
       const swiper = new Swiper('.swiper-container', {
@@ -31,7 +46,10 @@
         direction: 'vertical',
         loop: false,
         spaceBetween: 30,
-        slidesPerView: 1
+        slidesPerView: 1,
+        // mousewheel: {
+        //   releaseOnEdges: true,
+        // },
       });
     </script>
   </body>

@@ -12,24 +12,55 @@ body {
     padding-right: min(7em, 2%);
     text-align: center;
     min-width: 80%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'MainFont';
+    overflow-y: hidden;
+    padding-top: 5em;
 }
 
 .swiper-container {
-    height: 98vh;
+    height: 80vh;
 }
 
 .swiper-slide {
     background-color: rgba(250, 235, 215, 0.6);
     min-width: 350px;
     height: 100%;
-
+    justify-items: center;
     border-radius: 2em;
-    
 }
 .angel {
     width: 25%;
 }
 
-p {
-    font-family: 'MainFont';
+.greating {
+    font-size:x-large;
+    margin: 1em;
 }
+
+.timer-wrapper {
+    display: block
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem;
+    font-size: 3rem;
+    justify-items: center;
+  }
+  
+  .timer-item {
+    position: relative;
+  }
+  
+  .timer-item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.875rem;
+    color: #424242;
+  }
